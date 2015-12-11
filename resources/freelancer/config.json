@@ -1,0 +1,53 @@
+{
+	"type": "UserCollection",
+	"properties": {
+		"expertskill": {
+			"name": "expertskill",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "expertskill",
+			"order": 0
+		},
+		"experiance": {
+			"name": "experiance",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "experiance",
+			"order": 1
+		},
+		"image": {
+			"name": "image",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "image",
+			"order": 2
+		},
+		"rating": {
+			"name": "rating",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "rating",
+			"order": 3
+		},
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "email",
+			"order": 4
+		},
+		"mobilenum": {
+			"name": "mobilenum",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "mobilenum",
+			"order": 5
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "description",
+			"order": 0
+		},
+		"requirement": {
+			"name": "requirement",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "requirement",
+			"order": 1
+		},
+		"deadline": {
+			"name": "deadline",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "deadline",
+			"order": 2
+		},
+		"budget": {
+			"name": "budget",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "budget",
+			"order": 3
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"type": "Collection",
+	"properties": {
+		"username": {
+			"name": "username",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "username",
+			"order": 0
+		},
+		"password": {
+			"name": "password",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "password",
+			"order": 1
+		},
+		"interest": {
+			"name": "interest",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "interest",
+			"order": 2
+		},
+		"image": {
+			"name": "image",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "image",
+			"order": 3
+		},
+		"rating": {
+			"name": "rating",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "rating",
+			"order": 4
+		},
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "email",
+			"order": 5
+		},
+		"mobilenum": {
+			"name": "mobilenum",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "mobilenum",
+			"order": 6
+		}
+	}
+}

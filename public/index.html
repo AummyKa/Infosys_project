@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deployd login form</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/frontPage.css" />
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+
+
+</head>
+<body>
+ 
+    <div class="container" id = "sign-in">
+        
+      	<h1>FreeLanzer</h1>
+        	<form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" /><br />
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="/register.html" class="btn btn-link"></a>
+            <a href="/register.html" class="btn btn-link">sign up</a>
+            <a href="/mainPage.html" button type="button" class="btn btn-default btn-lg">Home</button>
+          </form>            
+    </div>
+  
+
+  <script type="text/javascript" src="/js/lib/jquery.js"></script>
+  <script type="text/javascript" src="/dpd.js"></script>
+  <script type="text/javascript">
+    dpd.users.me(function(user) {
+      if (user) {
+        location.href = "/mainPage.html";
+      }
+    });
+
+    $('form').submit(function() {
+      var username = $('#username').val();
+      var password = $('#password').val();
+
+      dpd.users.login({username: username, password: password}, function(session, error) {
+        if (error) {
+          alert(error.message);
+        } else {
+          location.href = "/mainPage.html";
+        }
+      });
+
+      return false;
+    });
+  </script>
+</body>
+</html>
